@@ -13,5 +13,8 @@ for x in  range (0, num_digit):
     random_digit = random.choice(string.digits)
     print(f"Random digit: {random_digit}")
 
-num_special_characters   = input("How many special characters do you want ")
-random_special = random.choice(string.punctuation)
+num_special_characters   = int( input("How many special characters do you want "))
+
+for x in  range (0, num_special_characters ):
+    random_special = random.choice(string.punctuation)
+    print(f"Random special character: {random_special}")

@@ -22,5 +22,5 @@ for x in  range (0, num_special_characters ):
     random_special = random.choice(string.punctuation)
     print(f"Random special character: {random_special}")
 
-password_output = output(random_letter, random_digit, random_special)
-print(password_output)
+password_output = (random_letter, random_digit, random_special)
+print("Your password is: " + password_output)

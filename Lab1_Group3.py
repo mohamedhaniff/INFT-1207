@@ -1,6 +1,8 @@
 import  random
 import  string
 total_length  = int(input("Enter the total Length of the password  "))
+    if total_length < 8:
+        print("Password must be at least 8 characters")
 num_letters  = int(input("How many letters do you want "))
 for x in  range (0, num_letters):
     random_letter = random.choice(string.ascii_letters)
